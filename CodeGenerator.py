@@ -5,9 +5,11 @@ import string;
 import random;
 import os;
 
-global dataStructure
+global dataStructure,filename
 dataStructure={}
 conditions={'gt':'>','gte':'>=','lt':'<','lte':'<=','eq':'==','neq':'!=','or':'||','and':'&&'}
+functions={}
+writingFunction=False
 def action(data):
     if 'print' in data.split(" "):
         return printdata(re.findall(r"'(.*?)'", data, re.DOTALL)[0])
@@ -32,12 +34,31 @@ def action(data):
 
     if 'else' in data.split(" "):
         return elseCondition()
-
+    if 'function' in data.split(" ") and not writingFunction:
+        return functionCreate(data)
+    if 'create'in data.split(" ")and 'object' in data.split(" "):
+        if 'objects' not in dataStructure.keys():
+            dataStructure['objects']={};
+        if len(data.split(" "))>2:
+            if data.split(" ")[2] not in dataStructure['objects'].keys():
+                dataStructure['objects'][data.split(" ")[2]]=[]
+            dataStructure['objects'][data.split(" ")[2]].append(input("enter the object name"))
+            return data.split(" ")[2] +" "+dataStructure['objects'][data.split(" ")[2]][-1]+"= new "+data.split(" ")[2]+"();"
+        else:
+            if filename not in dataStructure['objects'].keys():
+                dataStructure['objects'][filename]=[]
+            dataStructure['objects'][filename].append(input("enter the object name"))
+            return filename+" "+dataStructure['objects'][filename][-1]+"= new "+filename+"();"
+        return ""
+    if 'call' in data.split(" "):
+        return callFunction(data.split(" ")[1],input('object name'))
 def printdata(data):
     statement = 'System.out.println("'+data+'");'
     return statement
 
+def callFunction(functionname,object=""):
 
+    return object+"."+functionname+"("+input("parameters")+");"
 
 def ifCondition(data):
     statement="if ("+data+"){"
@@ -63,6 +84,20 @@ def elseCondition():
         data= input()
     return statement+'}'
 
+def functionCreate(data):
+    functionname =data.split(" ")[1]
+    global writingFunction
+    writingFunction=True
+    if functionname not in functions.keys():
+        functions[functionname]=""
+    functions[functionname]="public "+input("return type")+" "+functionname+"("+input("Inputs with data type")+"){"
+    statement=""
+    data = input()
+    while('End function' not in data and writingFunction):
+        statement+=action(data)
+        data =input()
+    functions[functionname]+=statement+"}"
+    return ""
 def forloop(times):
     if 'for' not in dataStructure.keys():
         dataStructure['for']=[]
@@ -87,7 +122,7 @@ def forloop(times):
 # print(text)
 
 
-global program
+global program,filename
 filename= input("enter the file name")
 program = "public class "+filename+""" {
 
@@ -100,8 +135,10 @@ data=input()
 while 'End' not in data:
     program+=action(data)
     data=input()
-program+="""}
-         }"""
+program+="}"
+for key in functions.keys():
+    program+=functions[key]
+program+="}"
 print(program)
 f = open(filename+".java", "w")
 f.write(program)

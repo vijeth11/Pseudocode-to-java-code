@@ -4,7 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/CodeGenerator.py" line="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a605bba-50f6-4f87-a5f0-95134f378c80" name="Default Changelist" comment="" />
+    <list default="true" id="5a605bba-50f6-4f87-a5f0-95134f378c80" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/CodeGenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3.class" beforeDir="false" afterPath="$PROJECT_DIR$/test3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/test3.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +21,10 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
+          <entry key="project.open.time.117" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.47" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -33,12 +39,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2485" />
+          <entry key="py" value="3972" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2485" />
+          <entry key="Python" value="3972" />
         </counts>
       </usages-collector>
     </session>
@@ -48,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plotlib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="68">
               <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -60,15 +66,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CodeGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+            <state relative-caret-position="273">
+              <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
-                <marker date="1545121062769" expanded="true" signature="292:1139" ph="..." />
-                <marker date="1545121062769" expanded="true" signature="1322:1481" ph="..." />
-                <marker date="1545121062769" expanded="true" signature="1508:1677" ph="..." />
-                <marker date="1545121062769" expanded="true" signature="1697:1854" ph="..." />
-                <marker date="1545121062769" expanded="true" signature="2073:2306" ph="..." />
+                <marker date="1545377604527" expanded="true" signature="336:1183" ph="..." />
+                <marker date="1545377604527" expanded="true" signature="2472:2533" ph="..." />
+                <marker date="1545377604527" expanded="true" signature="2555:2714" ph="..." />
+                <marker date="1545377604527" expanded="true" signature="2741:2910" ph="..." />
+                <marker date="1545377604527" expanded="true" signature="2930:3491" ph="..." />
+                <marker date="1545377604527" expanded="true" signature="3201:3491" ph="..." />
               </folding>
             </state>
           </provider>
@@ -106,7 +113,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,6 +124,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -196,7 +203,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/plotlib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="68">
           <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
@@ -206,15 +213,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+        <state relative-caret-position="273">
+          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
-            <marker date="1545121062769" expanded="true" signature="292:1139" ph="..." />
-            <marker date="1545121062769" expanded="true" signature="1322:1481" ph="..." />
-            <marker date="1545121062769" expanded="true" signature="1508:1677" ph="..." />
-            <marker date="1545121062769" expanded="true" signature="1697:1854" ph="..." />
-            <marker date="1545121062769" expanded="true" signature="2073:2306" ph="..." />
+            <marker date="1545377604527" expanded="true" signature="336:1183" ph="..." />
+            <marker date="1545377604527" expanded="true" signature="2472:2533" ph="..." />
+            <marker date="1545377604527" expanded="true" signature="2555:2714" ph="..." />
+            <marker date="1545377604527" expanded="true" signature="2741:2910" ph="..." />
+            <marker date="1545377604527" expanded="true" signature="2930:3491" ph="..." />
+            <marker date="1545377604527" expanded="true" signature="3201:3491" ph="..." />
           </folding>
         </state>
       </provider>
