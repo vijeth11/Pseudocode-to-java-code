@@ -43,3 +43,35 @@ public class test3 {<br />
       }<br />
     }<br />
 }<br />
+
+#For Function 
+enter the file name test3<br>
+enter the code <br>
+
+function hello<br>
+return type void<br>
+Inputs with data type  //you can leave it empty or write the parameters <br> 
+print 'hello i am a function'<br>
+End function<br>
+create object  //creates object of same class if not mentioned <br>
+enter the object name obj1 <br>
+call hello <br>
+object name obj1 <br>
+parameters <br>
+End <br>
+
+
+#Output
+public class test3 {
+
+    public static void main(String[] args) 
+    {
+    test3 obj1= new test3();
+    obj1.hello();
+    }
+    public void hello()
+    {
+    System.out.println("hello i am a function");
+    }
+ }
+
